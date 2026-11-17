@@ -1,0 +1,9 @@
+{
+  "name": "mlunit",
+  "version": "1.0.0",
+  "description": "mlunit skill",
+  "targets": [
+    "codex",
+    "claude"
+  ]
+}
