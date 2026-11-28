@@ -13,12 +13,11 @@ ou examiner la conversion d’un titre en nom de dossier.
 `unit_update` avec `title` renomme le dossier de l’unité **dans son parent actuel**. Le document
 conserve son docId et son nom de fichier. Une unité classée sous un sujet ou dans un épisode
 reste dans ce parent. Renommer une série déplace aussi ses épisodes imbriqués.
-Un document directement à la racine du store n’a pas de dossier contenant à renommer.
+Un document directement au DCMS root garde son emplacement.
 
-Le worker répare dans la même opération les références vers tout ce qui se trouve dans le dossier :
-`members` de chaque sommaire, liens `unit::` des articles et `contents[].path` de l’unité.
-Seules les références écrites comme des liens sont suivies : chemins depuis la racine du store,
-avec une barre oblique initiale.
+Dans la même opération, le worker répare les DCMS links vers le dossier et ses fichiers.
+Cela couvre `members` des sommaires, les destinations `unit::` des articles et
+`contents[].path` de l’unité.
 
 Utiliser le **nouveau chemin renvoyé par `unit_update`** ; un ancien chemin devient invalide
 quand son dossier est déplacé. `unit_list` associe docIds et chemins actuels. Le titre n’est pas

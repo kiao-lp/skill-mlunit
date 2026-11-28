@@ -45,9 +45,9 @@ Le modifier renomme le dossier ; lire la référence sur le renommage ci-dessous
 - Pour les épisodes d’un module, lire la référence de réalisation ci-dessous **avant de choisir
   le titre ou le dossier** : elle définit la convention des dossiers d’épisode et son exception
   au titre sans numéro.
-- Écrire les références depuis la racine du store **avec une barre oblique initiale**, par
-  exemple `/units/Cell division/cadre.md`. Cela vaut pour `members`, `contents[].path` et les
-  liens vers le store.
+- Écrire `members` et `contents[].path` comme des **DCMS links** résolus depuis le DCMS root.
+  Commencer par `/`, comme dans `/units/Cell division/cadre.md`. Dans une destination Markdown
+  ordinaire, encoder les espaces, comme dans `/units/Cell%20division/cadre.md`.
 
 ## À charger selon la tâche
 
