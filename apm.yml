@@ -1,9 +1,1 @@
-{
-  "name": "mlunit",
-  "version": "1.0.1",
-  "description": "mlunit skill",
-  "targets": [
-    "codex",
-    "claude"
-  ]
-}
+{"name": "mlunit", "version": "1.0.2", "description": "mlunit skill", "targets": ["codex", "claude"]}
